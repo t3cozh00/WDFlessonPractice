@@ -8,6 +8,7 @@ import Menu from "./exercise701/Menu";
 import ButtonComponent2 from "./ButtonComponent2";
 import ButtonComponent3 from "./ButtonComponent3";
 
+
 function App() {
   const batMan: UserInfo = { firstName: "Bruce", lastName: "Wayne", age: 42 };
 
@@ -31,6 +32,7 @@ function App() {
     console.log("Button3 clicked at", event.clientX, event.clientY);
     setMessage("Button3 clicked");
   };
+  
 
   return (
     <>
