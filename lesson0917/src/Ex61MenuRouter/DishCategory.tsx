@@ -1,14 +1,12 @@
-import React from "react";
+import { DishCategoryProps } from "./MenuTypes";
 
-import { MenuItem } from "./MenuTypes";
-
-export default function DishCategory({ dishItems }: MenuItem) {
+export default function DishCategory({ items }: DishCategoryProps) {
   return (
     <div>
-      {dishItems.map((i) => (
-        <div key={i.name}>
+      {items.map((i) => (
+        <li key={i.name}>
           {i.name}, {i.price}€
-        </div>
+        </li>
       ))}
     </div>
   );

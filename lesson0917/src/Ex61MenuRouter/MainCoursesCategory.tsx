@@ -1,19 +1,29 @@
 import classes from "./RestaurantMenu.module.css";
-
-import { Link } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
+import DishCategory from "./DishCategory";
+import { menuCategories } from "./EX61RestaurantMenu";
 
 export default function MainCoursesCategory() {
   return (
     <div className={classes.menu}>
-      <Link to={"/main-courses/pizza"}>
+      <Link to={"pizza"}>
         <div>Pizza</div>
       </Link>
-      <Link to={"/main-courses/pasta"}>
+      <Link to={"pasta"}>
         <div>Pasta</div>
       </Link>
-      <Link to={"/main-courses/hamburger"}>
+      <Link to={"hamburger"}>
         <div>Hamburgers</div>
       </Link>
+      <Routes>
+        {menuCategories.mainCourses.map(({ category, items }) => (
+          <Route
+            key={category}
+            path={category}
+            element={<DishCategory items={items} />}
+          />
+        ))}
+      </Routes>
     </div>
   );
 }

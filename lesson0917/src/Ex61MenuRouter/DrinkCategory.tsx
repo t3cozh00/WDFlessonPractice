@@ -1,19 +1,29 @@
 import classes from "./RestaurantMenu.module.css";
-
-import { Link } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
+import DishCategory from "./DishCategory";
+import { menuCategories } from "./EX61RestaurantMenu";
 
 export default function DrinkCategory() {
   return (
     <div className={classes.menu}>
-      <Link to={"/drinks/coke"}>
+      <Link to={"coke"}>
         <div>Coke</div>
       </Link>
-      <Link to={"/drinks/fanta"}>
+      <Link to={"fanta"}>
         <div>Fanta</div>
       </Link>
-      <Link to={"/drinks/sprite"}>
+      <Link to={"sprite"}>
         <div>Sprite</div>
       </Link>
+      <Routes>
+        {menuCategories.drinks.map(({ category, items }) => (
+          <Route
+            key={category}
+            path={category}
+            element={<DishCategory items={items} />}
+          />
+        ))}
+      </Routes>
     </div>
   );
 }
