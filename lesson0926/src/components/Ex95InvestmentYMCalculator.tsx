@@ -3,8 +3,8 @@
 
 import React, { useState } from "react";
 
-import { InvestmentData } from "./InvestmentData";
-import AreaChartComponent from "./AreaChart";
+import { InvestmentData } from "./DataType";
+//import AreaChartComponent from "./AreaChart";
 import BarChartComponent from "./BarChart";
 import Table from "./Table";
 import Form from "./Form";

@@ -11,7 +11,7 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
-import { InvestmentData } from "./InvestmentData";
+import { InvestmentData } from "./DataType";
 
 export default function BarChartComponent({
   display,

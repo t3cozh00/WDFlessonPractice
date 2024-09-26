@@ -1,5 +1,5 @@
 import classes from "./Ex95TableStyle.module.css";
-import { InvestmentData } from "./InvestmentData";
+import { InvestmentData } from "./DataType";
 
 export default function ({
   display,
