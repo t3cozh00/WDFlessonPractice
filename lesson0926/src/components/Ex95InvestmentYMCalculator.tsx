@@ -11,6 +11,8 @@ import Form from "./Form";
 
 export default function Ex9501InvestmentCalculator() {
   const [investmentData, setInvestmentData] = useState<InvestmentData[]>([]);
+
+  const [display, setDisplay] = useState("none");
   //   const investmentData: InvestmentYearData = [{}];
 
   function formYearlySubmissionHandler(event: React.FormEvent) {
@@ -61,15 +63,16 @@ export default function Ex9501InvestmentCalculator() {
     }
     setInvestmentData(newInvestmentData);
     console.log("investmentData:", investmentData);
+    setDisplay("block");
   }
 
   return (
     <div>
       <h2>Ex95 Investment Yearly or Monthly Calculator</h2>
       <Form onSubmit={formYearlySubmissionHandler} />
-      <Table investmentData={investmentData} />
-      <BarChartComponent data={investmentData} />
-      <AreaChartComponent />
+      <Table display={display} investmentData={investmentData} />
+      <BarChartComponent display={display} data={investmentData} />
+      {/* <AreaChartComponent /> */}
     </div>
   );
 }

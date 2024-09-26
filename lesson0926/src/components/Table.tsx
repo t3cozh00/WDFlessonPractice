@@ -2,12 +2,14 @@ import classes from "./Ex95TableStyle.module.css";
 import { InvestmentData } from "./InvestmentData";
 
 export default function ({
+  display,
   investmentData,
 }: {
+  display: string;
   investmentData: InvestmentData[];
 }) {
   return (
-    <div>
+    <div style={{ display: display }}>
       <table className={classes.table}>
         <thead>
           <tr>

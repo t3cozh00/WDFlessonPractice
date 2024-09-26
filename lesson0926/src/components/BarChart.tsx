@@ -14,8 +14,10 @@ import {
 import { InvestmentData } from "./InvestmentData";
 
 export default function BarChartComponent({
+  display,
   data,
 }: {
+  display: string;
   data: InvestmentData[];
 }) {
   //   const investmentData = [
@@ -39,7 +41,7 @@ export default function BarChartComponent({
   //     }
   //   ];
   return (
-    <div>
+    <div style={{ display: display }}>
       <BarChart width={400} height={300} data={data}>
         <YAxis />
         <XAxis dataKey="year" />
