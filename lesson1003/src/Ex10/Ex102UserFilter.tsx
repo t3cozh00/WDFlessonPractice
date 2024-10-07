@@ -16,12 +16,12 @@ export default function Ex102UserFilter({
   return (
     <div>
       <h3>UserFilter</h3>
-      <div>
-        <label>Age</label>
-        <input type="radio" name="age" value="age" />
+      {/* <div>
         <label>UserName</label>
         <input type="radio" name="userName" value="userName" />
-      </div>
+        <label>Address</label>
+        <input type="radio" name="age" value="age" />
+      </div> */}
       <div
         style={{
           display: "flex",
