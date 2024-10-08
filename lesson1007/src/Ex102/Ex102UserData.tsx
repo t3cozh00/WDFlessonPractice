@@ -2,15 +2,7 @@ import { useState, useEffect } from "react";
 import Ex102UserFilter from "./Ex102UserFilter";
 import Ex102UserList from "./Ex102UserList";
 
-interface User {
-  firstName: string;
-  lastName: string;
-  address: {
-    address: string;
-  };
-  age: number;
-  height: number;
-}
+import { User } from "./Ex102DataType";
 
 export default function Ex102UserData() {
   const [usersList, setUsersList] = useState<User[]>([]);

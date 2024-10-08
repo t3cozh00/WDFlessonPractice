@@ -24,7 +24,7 @@ export default function Ex102UserFilter({
 
   return (
     <div>
-      <h3>UserFilter</h3>
+      <h3 style={{ textAlign: "left" }}>UserFilter</h3>
       <div>
         <input
           type="radio"
@@ -55,12 +55,7 @@ export default function Ex102UserFilter({
         />
         <label>Minimum Height</label>
       </div>
-      <div
-        style={{
-          display: "flex",
-          gap: "8px", // 在 input 和 button 之间添加间距
-        }}
-      >
+      <div>
         <input
           type="text"
           value={filterValue}

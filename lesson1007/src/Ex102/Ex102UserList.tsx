@@ -1,33 +1,36 @@
-interface User {
-  firstName: string;
-  lastName: string;
-  address: {
-    address: string;
-  };
-  age: number;
-  height: number;
-}
+import { User } from "./Ex102DataType";
+import classes from "./Ex102TableStyle.module.css";
 
 export default function Ex102UserList({ users }: { users: User[] }) {
   return (
-    <div
-      style={{
-        border: "1px solid #ccc",
-        borderRadius: "8px",
-        padding: "10px",
-        margin: "10px 0",
-        textAlign: "left",
-      }}
-    >
+    <div className={classes.userList}>
       <h3>UserList</h3>
-      <ul>
-        {users.map((user, index) => (
-          <div key={index} style={{ border: "1px solid #ccc" }}>
-            {user.firstName} {user.lastName} {user.address.address} {user.age}{" "}
-            {user.height}
-          </div>
-        ))}
-      </ul>
+      <table className={classes.table}>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Age</th>
+            <th>Height</th>
+            <th>Image</th>
+          </tr>
+        </thead>
+        <tbody>
+          {users.map((user, index) => (
+            <tr key={index}>
+              <td>
+                {user.firstName} {user.lastName}
+              </td>
+              <td>{user.address.address}</td>
+              <td>{user.age}</td>
+              <td>{user.height}</td>
+              <td>
+                <img src={user.image} alt="user" />
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
   );
 }
