@@ -1,7 +1,17 @@
-//import React from "react";
+import { useContext } from "react";
+import { ThemeContext } from "./Ex103";
 import themeStyles from "./Ex103Themes.module.css";
 
-export default function OtherComponent({ theme }) {
+export default function OtherComponent() {
+  const { theme } = useContext(ThemeContext);
+
+  //   let themeStyle = null;
+  //   if (theme === "light") {
+  //     themeStyle = themeStyles.lightTheme;
+  //   } else {
+  //     themeStyle = themeStyles.darkTheme;
+  //   }
+
   const themeStyle =
     theme === "light" ? themeStyles.lightTheme : themeStyles.darkTheme;
 
