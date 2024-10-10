@@ -1,4 +1,4 @@
-export default function ColorList(props) {
+export default function Ex32ColorList(props) {
   //or export default function ColorList({ color1, color2, color3 }) {
   // exercise3_2
 
@@ -11,6 +11,7 @@ export default function ColorList(props) {
 
   return (
     <ul>
+      <h3>Ex32ColorList</h3>
       <li>{color1}</li>
       <li>{color2}</li>
       <li>{color3}</li>

@@ -1,9 +1,9 @@
 import "./App.css";
 import Header from "./Header";
-import NumberList from "./exercise1/exercise1_4";
-import GetRandomNumber from "./exercise1/exercise1_5";
-import GreetingPersons from "./exercise1/exercise1_6";
-import FavoriteFruit from "./exercise1/exercise1_7";
+import Ex14NumberList from "./exercise1/Ex14NumberList";
+import Ex15GetRandomNumber from "./exercise1/Ex15GetRandomNumber";
+import Ex16GreetingPersons from "./exercise1/Ex16GreetingPersons";
+import Ex17FavoriteFruit from "./exercise1/Ex17FavoriteFruit";
 import ColorList from "./exercise2/ColorList";
 import ContactList from "./exercise2/ContactList";
 
@@ -34,10 +34,10 @@ function App() {
   return (
     <div>
       <Header />
-      <NumberList />
-      <GetRandomNumber />
-      <GreetingPersons />
-      <FavoriteFruit />
+      <Ex14NumberList />
+      <Ex15GetRandomNumber />
+      <Ex16GreetingPersons />
+      <Ex17FavoriteFruit />
       <ColorList />
       <ContactList />
 

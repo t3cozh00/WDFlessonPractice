@@ -2,10 +2,10 @@
 
 <p>My favorite fruits are: oranges, apples, bananas</p>; */
 
-function FavoriteFruit() {
+function Ex17FavoriteFruit() {
   const fruitsArray = ["oranges", "apples", "banans"];
 
   return <div>My favorite fruits are: {fruitsArray.join(", ")}</div>;
 }
 
-export default FavoriteFruit;
+export default Ex17FavoriteFruit;

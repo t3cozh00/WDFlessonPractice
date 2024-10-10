@@ -1,7 +1,7 @@
 /* Exercise 1_6: Define an array of names and render a list of greetings using JSX. The DOM structure of the output should be:
 <div><p>Greetings Alice!</p><p>Greetings Bob!</p></div> */
 
-function GreetingPersons() {
+function Ex16GreetingPersons() {
   const nameArray = ["Tom", "Alice", "Penny", "Rubby"];
 
   const greetName = nameArray.map((names, index) => (
@@ -11,4 +11,4 @@ function GreetingPersons() {
   return <div>{greetName}</div>;
 }
 
-export default GreetingPersons;
+export default Ex16GreetingPersons;

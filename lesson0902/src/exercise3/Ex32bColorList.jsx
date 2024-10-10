@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function ColorList2({ colors }) {
+export default function Ex32bColorList({ colors }) {
   //input
   //const colorArray = ["yellow", "red"];
   //output
@@ -11,8 +11,10 @@ export default function ColorList2({ colors }) {
   for (let i = 0; i < colors.length; i++) {
     output.push(<li key={i}>{colors[i]}</li>);
   }
+
   return (
     <div>
+      <h3>Ex32bColorList</h3>
       <ul>{output}</ul>
     </div>
   );

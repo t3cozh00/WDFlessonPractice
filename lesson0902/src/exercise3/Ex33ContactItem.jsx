@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function ContactItem({ names, addresses }) {
+export default function Ex33ContactItem({ names, addresses }) {
   return (
     <div
       style={{
@@ -9,14 +9,11 @@ export default function ContactItem({ names, addresses }) {
         margin: "20px",
         cursor: "pointer",
         borderRadius: "10px",
+        textAlign: "left",
       }}
     >
-      <div>
-        <h3>{names}</h3>
-      </div>
-      <div>
-        <p>{addresses}</p>
-      </div>
+      <h3>{names}</h3>
+      <p>{addresses}</p>
     </div>
   );
 }

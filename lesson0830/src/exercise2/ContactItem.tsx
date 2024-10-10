@@ -2,7 +2,7 @@
 
 function ContactItem() {
   return (
-    <div style={{ padding: "10px", border: "3px solid black", margin: "40px" }}>
+    <div style={{ padding: "10px", border: "2px solid black", margin: "10px" }}>
       <h3>Name</h3>
       <p>address</p>
     </div>

@@ -1,10 +1,13 @@
 import React from "react";
-import classes from "./ConsoleButton.module.css";
+import classes from "./ButtonStyle.module.css";
 
 export default function GeneralButton({ buttonText, buttonAction }) {
   return (
-    <div className={classes.button} onClick={buttonAction}>
-      {buttonText}
+    <div>
+      <h3>Ex45GeneralButton</h3>
+      <div className={classes.button} onClick={buttonAction}>
+        {buttonText}
+      </div>
     </div>
   );
 }

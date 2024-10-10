@@ -2,7 +2,7 @@
 If your numbers are for example 1,2,3,4,5 then the output as DOM structure should be:
 <p>1 squared is 1</p><p>2 squared is 4</p><p>3 squared is 9</p><p>4 squared is 16</p><p>5 squared is 25</p> */
 
-function NumberList() {
+function Ex14NumberList() {
   const numArray = [1, 2, 3, 4, 5];
 
   const squaredNum = numArray.map((numbers, index) => (
@@ -14,4 +14,4 @@ function NumberList() {
   return <div>{squaredNum}</div>;
 }
 
-export default NumberList;
+export default Ex14NumberList;

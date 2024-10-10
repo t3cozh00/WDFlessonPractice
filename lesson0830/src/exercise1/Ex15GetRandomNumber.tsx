@@ -4,7 +4,7 @@ You should use the function to achieve output of the following format, where the
 
 <p>Your lucky number is 6!</p>  */
 
-function GetRandomNumber() {
+function Ex15GetRandomNumber() {
   const randomInteger = Math.floor(Math.random() * 10);
   let output;
   if (randomInteger == 6) {
@@ -15,4 +15,4 @@ function GetRandomNumber() {
   return output;
 }
 
-export default GetRandomNumber;
+export default Ex15GetRandomNumber;

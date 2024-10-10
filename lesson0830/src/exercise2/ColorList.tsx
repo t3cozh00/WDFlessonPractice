@@ -3,9 +3,11 @@
 function ColorList() {
   return (
     <div>
-      <li>red</li>
-      <li>white valkoinen</li>
-      <li>blac musta</li>
+      <ul>
+        <li>red</li>
+        <li>white valkoinen</li>
+        <li>blac musta</li>
+      </ul>
     </div>
   );
 }

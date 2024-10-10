@@ -5,12 +5,9 @@ import ContactItem from "./ContactItem";
 function ContactList() {
   return (
     <div>
-      <li>
-        <ContactItem />
-      </li>
-      <li>
-        <ContactItem />
-      </li>
+      <ContactItem />
+
+      <ContactItem />
     </div>
   );
 }
