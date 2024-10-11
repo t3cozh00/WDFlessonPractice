@@ -7,7 +7,7 @@ export default function Ex55SpecialKey() {
   const [specialKey, setSpecialKey] = useState(" ");
 
   const pressKey = (event) => {
-    setSpecialKey(`Key pressed: ${event.key}`);
+    setSpecialKey(event.key);
   };
 
   return (
@@ -17,11 +17,10 @@ export default function Ex55SpecialKey() {
       style={{
         padding: "20px",
         border: "1px solid black",
-        width: "200px",
-        textAlign: "center",
+        textAlign: "left",
       }}
     >
-      {specialKey}
+      Key pressed: {specialKey}
     </div>
   );
 }

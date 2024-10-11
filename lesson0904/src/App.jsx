@@ -8,12 +8,17 @@ import Ex55SpecialKey from "./exercise5/Ex55SpecialKey";
 import Ex53ColorChange from "./exercise5/Ex53ColorChange";
 import Ex57UseRefHook from "./exercise5/Ex57UseRefHook";
 import Ex58FocusInput from "./exercise5/Ex58FocusInput";
+import Ex5201ClickCounter from "./exercise5/Ex5201ClickCounter";
+import Ex5101TextInputRead from "./exercise5/Ex5101TextInputRead";
 
 function App() {
   //const [count, setCount] = useState(0);
 
   return (
     <>
+      <Ex5101TextInputRead />
+      <hr />
+      <Ex5201ClickCounter />
       <hr />
       <p>Ex58FocusInput</p>
       <Ex58FocusInput />
@@ -21,17 +26,17 @@ function App() {
       <p>Ex57UseRefHook</p>
       <Ex57UseRefHook />
       <hr />
-      <p>Ex53ColorChange</p>
-      <Ex53ColorChange />
+      <p>Ex56UserInfo</p>
+      <Ex56UserInfo />
       <hr />
       <p>Ex55SpecialKey</p>
       <Ex55SpecialKey />
       <hr />
-      <p>Ex56UserInfo</p>
-      <Ex56UserInfo />
-      <hr />
       <p>Ex54HideParagraphp</p>
       <Ex54HideParagraph />
+      <hr />
+      <p>Ex53ColorChange</p>
+      <Ex53ColorChange />
       <hr />
       <p>Ex52ClickCounter</p>
       <Ex52ClickCounter />
