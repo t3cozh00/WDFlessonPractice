@@ -6,10 +6,11 @@ import Menu from "./exercise701/Menu";
 function App() {
   return (
     <>
-      <Ex71HelloAssetWorld />
+      <Menu />
+      <hr />
       <Ex72Menu />
       <hr />
-      <Menu />
+      <Ex71HelloAssetWorld />
     </>
   );
 }

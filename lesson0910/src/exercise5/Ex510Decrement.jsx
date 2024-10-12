@@ -1,7 +1,11 @@
 import React from "react";
 import { useState } from "react";
 
-export default function Ex510Decrement({ decrementCounter, text }) {
+export default function Ex510Decrement({
+  setDisabled,
+  decrementCounter,
+  text,
+}) {
   //   const [counter, setCounter] = useState(0);
 
   //   function handleIncrement() {
@@ -11,7 +15,9 @@ export default function Ex510Decrement({ decrementCounter, text }) {
 
   return (
     <div>
-      <button onClick={decrementCounter}>{text}</button>
+      <button disabled={setDisabled} onClick={decrementCounter}>
+        {text}
+      </button>
     </div>
   );
 }

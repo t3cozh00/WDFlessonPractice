@@ -3,3 +3,7 @@ export interface UserInfo {
   lastName: string;
   age: number;
 }
+
+export interface PassUserInfoProps {
+  userInfo: UserInfo;
+}

@@ -4,8 +4,10 @@ import MainCoursesCategory from "./MainCoursesCategory";
 import DrinkCategory from "./DrinkCategory";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MenuNavigation from "./MenuNavigation";
+import { MenuCategory } from "./MenuTypes";
+import MenuCategories from "./MenuCategories";
 
-export const menuCategories = {
+export const menuCategories: MenuCategory = {
   mainCourses: [
     {
       category: "pizza",
@@ -75,8 +77,12 @@ export default function EX61RestaurantMenu() {
         </h4>
 
         <Routes>
-          <Route path="/main-courses/*" element={<MainCoursesCategory />} />
-          <Route path="/drinks/*" element={<DrinkCategory />} />
+          {/* <Route path="/main-courses/*" element={<MainCoursesCategory />} />
+          <Route path="/drinks/*" element={<DrinkCategory />} /> */}
+          <Route
+            path="/main-courses/*"
+            element={<MenuCategories menuItems={menuCategories.mainCourses} />}
+          />
 
           {/* Dynamic Routes for Main Courses
           {menuCategories.mainCourses.map(({ category, items }) => (

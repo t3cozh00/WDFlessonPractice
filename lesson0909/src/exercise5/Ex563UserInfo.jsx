@@ -3,7 +3,7 @@ import { useState } from "react";
 import Ex562Form from "./Ex56components/Ex56Form";
 import Ex56SaveMessage from "./Ex56components/Ex56SaveMessage";
 
-export default function () {
+export default function Ex563UserInfo() {
   const [dataSaved, setDataSaved] = useState(false);
   const [firstName, setFirstName] = useState("");
   const [familyName, setLastName] = useState("");
@@ -32,5 +32,10 @@ export default function () {
     );
   }
 
-  return <div>{output}</div>;
+  return (
+    <div>
+      <p>Ex563UserInfo</p>
+      {output}
+    </div>
+  );
 }

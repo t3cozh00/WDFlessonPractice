@@ -1,34 +1,39 @@
 import React from "react";
 import { useState } from "react";
-import Ex56Form from "./Ex56components/Ex56Form";
+import Ex562Form from "./Ex56components/Ex562Form";
 import Ex56SaveMessage from "./Ex56components/Ex56SaveMessage";
 
-export default function () {
+export default function Ex562UserInfo() {
   const [dataSaved, setDataSaved] = useState(false);
-  const [userInfo, setUserInfo] = useState({
-    firstName: "",
-    familyName: "",
-    emailAddress: "",
-  });
+  const [firstName, setFirstName] = useState("");
+  const [familyName, setFamilyName] = useState("");
+  const [emailAddress, setEmailAddress] = useState("");
 
-  function saveButtonParentComponent(formData) {
-    setUserInfo(formData);
+  function saveButtonParentComponent(first_Name, family_Name, email_Address) {
     setDataSaved(true);
+    setFirstName(first_Name);
+    setFamilyName(family_Name);
+    setEmailAddress(email_Address);
   }
 
   let output = (
-    <Ex56Form saveButtonChildComponent={saveButtonParentComponent} />
+    <Ex562Form saveButtonChildComponent={saveButtonParentComponent} />
   );
 
   if (dataSaved == true) {
     output = (
       <Ex56SaveMessage
-        firstName={userInfo.firstName}
-        familyName={userInfo.familyName}
-        emailAddress={userInfo.emailAddress}
+        firstName={firstName}
+        familyName={familyName}
+        emailAddress={emailAddress}
       />
     );
   }
 
-  return <div>{output}</div>;
+  return (
+    <div>
+      <p>Ex562UserInfo</p>
+      {output}
+    </div>
+  );
 }

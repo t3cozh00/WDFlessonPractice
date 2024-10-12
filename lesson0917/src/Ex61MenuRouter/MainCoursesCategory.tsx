@@ -6,7 +6,7 @@ import { menuCategories } from "./EX61RestaurantMenu";
 export default function MainCoursesCategory() {
   return (
     <div className={classes.menu}>
-      <Link to={"pizza"}>
+      {/* <Link to={"pizza"}>
         <div>Pizza</div>
       </Link>
       <Link to={"pasta"}>
@@ -14,7 +14,13 @@ export default function MainCoursesCategory() {
       </Link>
       <Link to={"hamburger"}>
         <div>Hamburgers</div>
-      </Link>
+      </Link> */}
+
+      {menuCategories.mainCourses.map(({ category }) => (
+        <Link key={category} to={category}>
+          <div>{category}</div>
+        </Link>
+      ))}
       <Routes>
         {menuCategories.mainCourses.map(({ category, items }) => (
           <Route

@@ -1,11 +1,10 @@
 import React from "react";
 import { useState } from "react";
 
-export default function () {
+export default function Ex56UserInfo() {
   const [firstName, setFirstName] = useState(""); //array destructuring, the first element is the current state value, the second element is the function that lets you update it
   const [lastName, setLastName] = useState("");
   const [emailAddress, setEmailAddress] = useState("");
-  //const [saveInfo, setSaveInfo] = useState("");
   const [dataSaved, setDataSaved] = useState(false);
 
   function firstNameInputChanged(event) {
@@ -71,5 +70,10 @@ export default function () {
     );
   }
 
-  return <div>{output}</div>;
+  return (
+    <div>
+      <p>Ex56UserInfo</p>
+      {output}
+    </div>
+  );
 }

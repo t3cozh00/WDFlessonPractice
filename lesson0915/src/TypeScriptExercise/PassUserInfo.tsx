@@ -1,8 +1,4 @@
-import { UserInfo } from "./Types";
-
-interface PassUserInfoProps {
-  userInfo: UserInfo;
-}
+import { PassUserInfoProps } from "./Types";
 
 export default function PassUserInfo({ userInfo }: PassUserInfoProps) {
   return (

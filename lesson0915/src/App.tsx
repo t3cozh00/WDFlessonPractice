@@ -1,18 +1,17 @@
 import "./App.css";
 import { useState } from "react";
 import ButtonComponent1 from "./ButtonComponent1";
-import DisplayUserInfo from "./DisplayUserInfo";
-import PassUserInfo from "./PassUserInfo";
-import { UserInfo } from "./Types";
+import DisplayUserInfo from "./TypeScriptExercise/DisplayUserInfo";
+import PassUserInfo from "./TypeScriptExercise/PassUserInfo";
+import { UserInfo } from "./TypeScriptExercise/Types";
 import Menu from "./exercise701/Menu";
 import ButtonComponent2 from "./ButtonComponent2";
 import ButtonComponent3 from "./ButtonComponent3";
 
-
 function App() {
   const batMan: UserInfo = { firstName: "Bruce", lastName: "Wayne", age: 42 };
 
-  const [text, setText] = useState("");
+  const [text, setText] = useState<string>("");
   const [message, setMessage] = useState<string>("");
 
   const handleClick1 = () => {
@@ -32,7 +31,6 @@ function App() {
     console.log("Button3 clicked at", event.clientX, event.clientY);
     setMessage("Button3 clicked");
   };
-  
 
   return (
     <>

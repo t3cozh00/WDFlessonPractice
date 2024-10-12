@@ -6,7 +6,7 @@ import { menuCategories } from "./EX61RestaurantMenu";
 export default function DrinkCategory() {
   return (
     <div className={classes.menu}>
-      <Link to={"coke"}>
+      {/* <Link to={"coke"}>
         <div>Coke</div>
       </Link>
       <Link to={"fanta"}>
@@ -14,7 +14,13 @@ export default function DrinkCategory() {
       </Link>
       <Link to={"sprite"}>
         <div>Sprite</div>
-      </Link>
+      </Link> */}
+
+      {menuCategories.drinks.map(({ category }) => (
+        <Link key={category} to={category}>
+          <div>{category}</div>
+        </Link>
+      ))}
       <Routes>
         {menuCategories.drinks.map(({ category, items }) => (
           <Route

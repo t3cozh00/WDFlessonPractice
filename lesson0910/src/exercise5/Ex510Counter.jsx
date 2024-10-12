@@ -8,32 +8,30 @@ export default function Ex510Counter() {
   const [counter, setCounter] = useState(0);
 
   function incrementCounter() {
-    console.log("click");
     setCounter(counter + 1);
-    console.log(counter);
   }
 
   function decrementCounter() {
-    console.log("click");
     setCounter(counter - 1);
-    console.log(counter);
   }
 
   function resetCounter() {
-    console.log("click");
     setCounter(0);
-    console.log(counter);
   }
 
   return (
     <div>
       <p>{counter}</p>
       <Ex510Increment
+        setDisabled={counter >= 10 ? true : false}
         incrementCounter={incrementCounter}
         text="Increase"
-        limitCounter={counter}
       />
-      <Ex510Decrement decrementCounter={decrementCounter} text="Decrease" />
+      <Ex510Decrement
+        setDisabled={counter <= 0 ? true : false}
+        decrementCounter={decrementCounter}
+        text="Decrease"
+      />
       <Ex510Reset resetCounter={resetCounter} text="Reset" />
     </div>
   );

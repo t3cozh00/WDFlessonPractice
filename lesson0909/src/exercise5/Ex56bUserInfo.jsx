@@ -3,9 +3,8 @@
 import React from "react";
 import { useState } from "react";
 
-export default function Ex6bUserInfo() {
+export default function Ex56bUserInfo() {
   const [userInfo, setUserInfo] = useState({});
-  const [saveInfo, setSaveInfo] = useState("");
   const [dataSaved, setDataSaved] = useState(false);
 
   userInfo.firstName = "";
@@ -14,8 +13,9 @@ export default function Ex6bUserInfo() {
 
   return (
     <div>
+      <p>Ex56bUserInfo</p>
       <div style={{ display: dataSaved ? "none" : "block" }}>input</div>
-      <button style={{ display: dataSaved ? "block" : "none" }}>Save6b</button>
+      <button style={{ display: dataSaved ? "block" : "none" }}>Save56b</button>
     </div>
   );
 }
