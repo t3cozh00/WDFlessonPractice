@@ -17,7 +17,7 @@ export default function Ex83FilterList() {
     setInput("");
   }
 
-  function filerBookHandler(event) {
+  function filerBookHandler(event: React.ChangeEvent<HTMLInputElement>) {
     console.log("event.target.value", event.target.value);
     setFilterString(event.target.value);
   }

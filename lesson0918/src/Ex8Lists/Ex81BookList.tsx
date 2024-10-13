@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function Ex81BookList() {
   const bookList = [
     { name: "To Kill a Mockingbird" },

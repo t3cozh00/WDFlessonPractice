@@ -1,12 +1,10 @@
-import React from "react";
-
 import { useRef } from "react";
 
 export default function Ex92UncontrolledForm() {
-  const firstNameRef = useRef<HTMLInputElement>();
+  const firstNameRef = useRef(null);
 
-  /*  commented out for useRef example
-  function formSumitHandler(event) {
+  /*  commented out
+  function formSumitFormDataHandler(event) {
     event.preventDefault();
     console.log("Form submitted");
 
@@ -20,7 +18,7 @@ export default function Ex92UncontrolledForm() {
 */
 
   function formSumitWithRefExampleHandler(event) {
-    event.preventDefault();
+    event.preventDefault(); // prevent the default form submission
     console.log("Form submitted");
 
     // read the form data from the form fileds

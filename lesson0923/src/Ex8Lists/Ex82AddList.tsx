@@ -18,6 +18,7 @@ export default function Ex82AddBooks() {
 
   return (
     <div>
+      <h2>Ex82AddBooks</h2>
       <input
         type="text"
         placeholder="Add your favourite book "

@@ -4,13 +4,22 @@ import { useState } from "react";
 import { useRef } from "react";
 import classes from "./Ex95Table.module.css";
 
-export default function Ex95InvestCalculator() {
-  const initialInvestmentRef = useRef<HTMLInputElement>();
-  const annualReturnRateRef = useRef<HTMLInputElement>();
-  const investmentDurationRef = useRef<HTMLInputElement>();
-  const additionalAnnualContributionRef = useRef<HTMLInputElement>();
+interface InvestmentYearlyData {
+  year: number;
+  savedTotalValue: number;
+  annualReturn: number;
+  totalInvestmentValue: number;
+}
 
-  const [invesmentYearlyData, setInvestmentYearlyData] = useState([]);
+export default function Ex95InvestCalculator() {
+  const initialInvestmentRef = useRef();
+  const annualReturnRateRef = useRef();
+  const investmentDurationRef = useRef();
+  const additionalAnnualContributionRef = useRef();
+
+  const [invesmentYearlyData, setInvestmentYearlyData] = useState<
+    InvestmentYearlyData[]
+  >([]);
 
   function formYearlyCalculateHandler(event) {
     event.preventDefault();

@@ -15,13 +15,12 @@ export default function Ex102UserList({ users }: { users: User[] }) {
       }}
     >
       <h3>UserList</h3>
-      <ul>
-        {users.map((user, index) => (
-          <div key={index}>
-            {user.firstName} {user.lastName}
-          </div>
-        ))}
-      </ul>
+
+      {users.map((user, index) => (
+        <div key={index}>
+          {user.firstName} {user.lastName}
+        </div>
+      ))}
     </div>
   );
 }

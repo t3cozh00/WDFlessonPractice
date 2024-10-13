@@ -1,8 +1,8 @@
-interface Ex81BookListProps {
+interface Ex8101BookListProps {
   books: string[];
 }
 
-export default function Ex81BookList({ books }: Ex81BookListProps) {
+export default function Ex8101BookList({ books }: Ex8101BookListProps) {
   return (
     <div>
       <ul>

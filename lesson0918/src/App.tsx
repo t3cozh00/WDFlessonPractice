@@ -8,7 +8,7 @@ function App() {
     <>
       <Ex82AddBooks />
       <hr />
-      Ex8101
+      <p>Ex8101</p>
       <Ex8101BookList
         books={[
           "To Kill a Mockingbird",
@@ -19,7 +19,7 @@ function App() {
         ]}
       />
       <hr />
-      Ex81
+      <p>Ex81</p>
       <Ex81BookList />
     </>
   );

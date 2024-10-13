@@ -13,7 +13,7 @@ export default function Ex82AddBooks() {
     const updatedBooks = [...books]; // Create a copy of the books array
     updatedBooks.push(input); // Use push to add the new book
     setBooks(updatedBooks); // Update the state with the new array
-    setInput("");
+    setInput(""); // Clear the input field
   }
 
   return (

@@ -32,8 +32,12 @@ export default function LifeCycleDemo() {
       >
         {showChild ? "Remove Child Component" : "Add Child Component"}
       </button>
-
       {showChild && <ChildComponent number={counter} />}
+      {/* showChild &&: This is a JavaScript logical && (AND) operator, which works as follows: 
+      If showChild is true, then the expression after && (i.e., <ChildComponent number={counter} />) will be evaluated and rendered. 
+      If showChild is false, React will not render anything after the &&. In other words, the ChildComponent will not be shown.
+      <ChildComponent number={counter} />: This is the JSX element that will be rendered if showChild is true. It's a child component named ChildComponent, and you're passing the counter state from the parent
+      component as a prop (number={counter}). */}
     </div>
   );
 }
